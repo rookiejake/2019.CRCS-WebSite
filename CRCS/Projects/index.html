@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cross Reality Collaboration Sandbox</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Poppins|Roboto" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+  
+    <!--<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+
+    <!--Style Sheet links-->
+    <!-- home page css-->
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <!-- home page - side menu css-->
+    <link rel="stylesheet" type="text/css" href="index-nav-menu.css">
+
+    <!-- animation effects -->
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+
+
+ </head>
+
+ <body>
+
+    <!-- scripts for bootstap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!--Navigation bars-->
+    <nav class="navbar navbar-default navbar-fixed-top" id="topmenu">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> 
+              <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".collapse navbar-collapse" aria-expanded="false" aria-controls="navbar"> -->
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">CRCS</a>
+          </div>
+          <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right" id="collapsenav">
+              <li><a href="http://depts.washington.edu/csscts/CRCS/">HOME</a></li>
+              <li><a href="http://depts.washington.edu/csscts/CRCS/About/">ABOUT</a></li>
+              <li><a href="http://depts.washington.edu/csscts/CRCS/Projects/">PROJECTS</a></li>
+              <li><a href="http://depts.washington.edu/csscts/CRCS/ImagineCup/">IMAGINE CUP</a></li>
+              <li><a href="http://depts.washington.edu/csscts/CRCS/Publications/">PUBLICATIONS</a></li>
+            </ul>
+          </div>
+        </div>
+    </nav>  
+
+   
+
+
+
+<!-- put everything in a main div to shift everything to the right when the menu is opened -->
+<div id="main">
+  
+    <!--grid for projects page -->
+    <div class="grid-container">
+
+        <div class="grid-item">
+            <div class="content">
+                <a href= "http://depts.washington.edu/csscts/CRCS/Projects/RoomSample1_HoloLens/">
+                    <div class="imageContainer">
+                
+                      <img class="imageBackground" src="Images/light-grey.png"  alt="lightGreyBack" >
+                      <img class="image" src="Images/hololens.gif"  alt="hololenseImage">
+                
+                      <div class="centered blackFont">Hololens</div> 
+                
+                    </div>
+                  </a>
+            </div>
+        </div>
+
+        <div class="grid-item">
+                <div class="content">
+                        <a href= "http://depts.washington.edu/csscts/CRCS/Projects/App2_CRCS_Kinect/">
+                            <div class="imageContainer">
+                        
+                              <img class="imageBackground" src="Images/blue.png"  alt="blueBack" >
+                              <img class="image" src="Images/Kinect.gif"  alt="kinectImage">
+                        
+                              <div class="centered">Kinect</div>
+                        
+                            </div>
+                          </a>
+                </div>
+        </div> 
+
+        <div class="grid-item">
+                <div class="content">
+                        <a href= "http://depts.washington.edu/csscts/CRCS/Projects/RoomSample2_Tango/">
+                            <div class="imageContainer">
+                        
+                              <img class="imageBackground" src="Images/light-grey2.png"  alt="lightGrey2Back" >
+                              <img class="image" src="Images/Tango.gif"  alt="tangoImage">
+                        
+                              <div class="centered">Tango</div>
+                        
+                            </div>
+                          </a>
+                    </div>
+        </div>
+
+        <div class="grid-item">
+                <div class="content">
+                        <a href= "http://depts.washington.edu/csscts/CRCS/Projects/App3_AndroidGame/">
+                            <div class="imageContainer">
+                        
+                              <img class="imageBackground" src="Images/grey.png"  alt="greyBack" >
+                              <img class="image large" src="Images/ball.gif"  alt="videoGameImage">
+                        
+                              <div class="centered">Video Games</div>
+                        
+                            </div>
+                          </a>
+                </div>
+        </div>
+
+        <div class="grid-item">
+                <div class="content">
+                        <a href= "http://depts.washington.edu/csscts/CRCS/Projects/App1_Teaching/">
+                            <div class="imageContainer">
+                        
+                              <img class="imageBackground" src="Images/chalkboard.png"  alt="chalkboard" >
+                              <img class="image large" src="Images/collaboration.png"  alt="bollaborationImage">
+                        
+                              <div class="centered">Collaboration</div>
+                        
+                            </div>
+                          </a>
+                    </div>
+        </div>  
+        <div class="grid-item">
+                <div class="content">
+                              
+                        <a href= "http://depts.washington.edu/csscts/CRCS/Projects/UI1_TUI_HoloLens/">
+                            <div class="imageContainer">
+                        
+                              <img class="imageBackground" src="Images/maroon.png"  alt="maroonBack" >
+                              <img class="image large" src="Images/manipulation.gif"  alt="manipulationImage">
+                        
+                              <div class="centered">Object Manipulation</div>
+                        
+                            </div>
+                          </a>
+                    </div>
+        </div>
+
+        <div class="grid-item">
+                <div class="content">
+                        <a href= "http://depts.washington.edu/csscts/CRCS/Projects/UI2_MobileAR/">
+                            <div class="imageContainer">
+                        
+                              <img class="imageBackground" src="Images/light-brown.png"  alt="lightBrownBack" >
+                              <img class="image large" src="Images/mobileAR.gif"  alt="mobileARImage">
+                        
+                              <div class="centered">Mobile AR</div>
+                        
+                            </div>
+                          </a>
+                    </div>
+             </div>
+
+      <div class="grid-item" id="temp">
+             <div class="content">
+                    <a href= "http://depts.washington.edu/csscts/CRCS/ImagineCup/">
+
+                    <div class="imageContainer">
+                
+                      <img class="imageBackground" src="Images/brown.png"  alt="lightBrownBack" >
+                      <img class="image large" src="Images/ImagineArt.gif"  alt="ImagineArt">
+                        
+                      <div class="centered">Imagine Cup</div>
+                
+                    </div>
+
+            </div>
+     </div>
+
+
+
+
+
+
+
+
+        <!--for even # of projects
+        <div class="grid-item" id="futurework">
+            <p id="futuretext">New projects currently in the works....</p>
+        </div>
+        -->
+    
+  </div>
+
+    <!--<div class="container-fluid">
+        <!--Row with two equal columns
+        <!--holo lens and imangine cup 
+        <div class="row">
+            <div class="col-md-6">
+                <div class="content left">
+                    <!-- <p class="titles">hololens</p>
+                    <a href= "http://depts.washington.edu/csscts/CRCS/Projects/RoomSample1_HoloLens/">
+                        <div class="imageContainer">
+                    
+                          <img class="imageBackground" src="Images/light-grey.png"  alt="lightGreyBack" >
+                          <img class="image" src="Images/hololens.gif"  alt="hololenseImage">
+                    
+                          <div class="centered blackFont">Hololens</div> 
+                    
+                        </div>
+                      </a>
+                </div>
+            </div>
+              <div class="col-md-6">
+                       <div class="content right">
+                              <a href= "http://depts.washington.edu/csscts/CRCS/Projects/UI2_MobileAR/">
+                                  <div class="imageContainer">
+                              
+                                    <img class="imageBackground" src="Images/light-brown.png"  alt="lightBrownBack" >
+                                    <img class="image large" src="Images/mobileAR.gif"  alt="mobileARImage">
+                              
+                                    <div class="centered">Mobile AR</div>
+                              
+                                  </div>
+                                </a>
+                       </div>
+                </div>
+        </div>
+
+                <!--tango and kinect 
+                <div class="row">
+                        <div class="col-md-6">
+                            <div class="content left">
+                                    <a href= "http://depts.washington.edu/csscts/CRCS/Projects/App2_CRCS_Kinect/">
+                                        <div class="imageContainer">
+                                    
+                                          <img class="imageBackground" src="Images/blue.png"  alt="blueBack" >
+                                          <img class="image" src="Images/Kinect.gif"  alt="kinectImage">
+                                    
+                                          <div class="centered">Kinect</div>
+                                    
+                                        </div>
+                                      </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                             <div class="content right">
+                                    <a href= "http://depts.washington.edu/csscts/CRCS/Projects/RoomSample2_Tango/">
+                                        <div class="imageContainer">
+                                    
+                                          <img class="imageBackground" src="Images/light-grey2.png"  alt="lightGrey2Back" >
+                                          <img class="image" src="Images/Tango.gif"  alt="tangoImage">
+                                    
+                                          <div class="centered">Tango</div>
+                                    
+                                        </div>
+                                      </a>
+                                </div>
+                         </div>
+                    </div>
+
+                    <!--Collaboration and video games 
+                    <div class="row">
+                            <div class="col-md-6">
+                                <div class="content left">
+                                        <a href= "http://depts.washington.edu/csscts/CRCS/Projects/App3_AndroidGame/">
+                                            <div class="imageContainer">
+                                        
+                                              <img class="imageBackground" src="Images/grey.png"  alt="greyBack" >
+                                              <img class="image large" src="Images/ball.gif"  alt="videoGameImage">
+                                        
+                                              <div class="centered">Video Games</div>
+                                        
+                                            </div>
+                                          </a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                 <div class="content right">
+                                        <a href= "http://depts.washington.edu/csscts/CRCS/Projects/App1_Teaching/">
+                                            <div class="imageContainer">
+                                        
+                                              <img class="imageBackground" src="Images/chalkboard.png"  alt="chalkboard" >
+                                              <img class="image large" src="Images/collaboration.png"  alt="bollaborationImage">
+                                        
+                                              <div class="centered">Collaboration</div>
+                                        
+                                            </div>
+                                          </a>
+                                    </div>
+                             </div>
+                        </div>
+                    
+
+                        <!--manipulation and mobile 
+                        <div class="row">
+                                <div class="col-md-6">
+                                    <div class="content left">
+                                      
+                                        <a href= "http://depts.washington.edu/csscts/CRCS/Projects/UI1_TUI_HoloLens/">
+                                            <div class="imageContainer">
+                                        
+                                              <img class="imageBackground" src="Images/maroon.png"  alt="maroonBack" >
+                                              <img class="image large" src="Images/manipulation.gif"  alt="manipulationImage">
+                                        
+                                              <div class="centered">Object Manipulation</div>
+                                        
+                                            </div>
+                                          </a>
+                                    </div>
+                                </div>
+                        </div>
+                    
+                            
+    </div> -->
+
+   <!--title block -->
+
+
+
+<!-- side nav bar -->      
+<nav class="navbar">
+    <span class="openslide">
+        <a href="#/" onclick="openSlideMenu()">
+            <svg width="30" height="30">
+                <path d="M0,5 30,5" stroke="#3498db" stroke-width="5"/>
+                <path d="M0,14 30,14" stroke="#f1c40f" stroke-width="5"/>
+                <path d="M0,23 30,23" stroke="#e74c3c" stroke-width="5"/>
+            </svg>
+        </a>
+    </span>
+</nav>
+
+<div id="sidemenu" class="sidenav">
+    <a href="#/" class="closebutton" onclick="closeSideMenu()">&times;</a>
+    <a href="http://depts.washington.edu/csscts/CRCS/">HOME</a>
+    <a href="http://depts.washington.edu/csscts/CRCS/About/">ABOUT</a>
+    <a href="http://depts.washington.edu/csscts/CRCS/Projects/">PROJECTS</a>
+    <a href="http://depts.washington.edu/csscts/CRCS/ImagineCup/">IMAGING CUP</a>
+    <a href="http://depts.washington.edu/csscts/CRCS/Publications/">PUBLICATIONS</a>
+</div>
+
+<!-- footer -->
+<footer class="footerall">
+    <p class="text-center"><a href="http://www.uwb.edu">University of Washington Bothell</a></p>
+    <p class="text-center">Copyright &copy 1990-2018 UWB All Rights reserved.</p>
+</footer>
+
+<!-- footer using bootstrap 4, looks nice but will have to update the top nav bar due to it being bootstrap 3 -->
+<!--
+<footer class="container py-5">
+    <div class="row">
+      <div class="col-12 col-md">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mb-2"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line></svg>
+        <small class="d-block mb-3 text-muted">&copy; 2017-2018</small>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Features</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="#">Cool stuff</a></li>
+          <li><a class="text-muted" href="#">Random feature</a></li>
+          <li><a class="text-muted" href="#">Team feature</a></li>
+          <li><a class="text-muted" href="#">Stuff for developers</a></li>
+          <li><a class="text-muted" href="#">Another one</a></li>
+          <li><a class="text-muted" href="#">Last time</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Resources</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="#">Resource</a></li>
+          <li><a class="text-muted" href="#">Resource name</a></li>
+          <li><a class="text-muted" href="#">Another resource</a></li>
+          <li><a class="text-muted" href="#">Final resource</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Resources</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="#">Business</a></li>
+          <li><a class="text-muted" href="#">Education</a></li>
+          <li><a class="text-muted" href="#">Government</a></li>
+          <li><a class="text-muted" href="#">Gaming</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>About</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="#">Team</a></li>
+          <li><a class="text-muted" href="#">Locations</a></li>
+          <li><a class="text-muted" href="#">Privacy</a></li>
+          <li><a class="text-muted" href="#">Terms</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer> -->
+
+
+
+<!--script for opening and closeing the side menu-->
+<script>
+    function openSlideMenu(){
+        document.getElementById('sidemenu').style.width = '250px';
+        document.getElementById('main').style.marginLeft = '250px';
+    }
+
+    function closeSideMenu(){
+        document.getElementById('sidemenu').style.width = '0';
+        document.getElementById('main').style.marginLeft = '0';
+    }
+</script>
+
+
+    <!-- jquery cdn -->
+    <script   src="http://code.jquery.com/jquery-3.2.1.js"></script>
+    <!-- <script type="text/javascript" src="hidetopnavbar.js"></script> -->
+
+    <!-- script for stick nav bar -->
+    <script type="text/javascript">
+        $(window).scroll(function(){
+          if($(this).scrollTop() > 50) {
+            $('.navbar').addClass("sticky");
+          } else {
+            $('.navbar').removeClass("sticky");
+          }
+        });
+    </script>
+
+    <!-- script for fading in/out the top nav bar -->
+    <script type="text/javascript">
+      (function($) {          
+        $(document).ready(function(){                    
+          $(window).scroll(function(){                          
+            if ($(this).scrollTop() > 50) {
+                $('#topmenu').fadeOut(10);
+            } else {
+                $('#topmenu').fadeIn(10);
+            }
+          });
+        });
+      })(jQuery);
+    </script>
+
+    <!-- animation effect on the top nav bar -->
+    <script>
+        window.sr = ScrollReveal();
+        sr.reveal('#topmenu',{
+            duration: 1750,
+            origin: 'bottom'
+        });
+    </script>
+ 
+
+
+ </body>
+ 
+</html>
