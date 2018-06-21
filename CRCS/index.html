@@ -1,43 +1,33 @@
 ﻿<!DOCTYPE html>
 <!-- created by MiyuKimura on May10, 2017 -->
-<!-- Additions and formatting by Ben Clark, June 2018-->
+<!-- Additions, formatting, and comments by Ben Clark, June 2018-->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>About &#8211; Cross Reality Collaboration Sandbox</title>
+    <title>Cross Reality Collaboration Sandbox</title>
 
+    <!-- Used to load in common html files used across the website. -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
         $(function () {
-            $("#extra").load("extra.html");
-        });
-        $(function () {
-            $("#navbar").load("nav-bar.html");
-        });
-        $(function () {
-            $("#secondary").load("widget-bar.html");
-        });
-        $(function () {
-            $("#page-footer").load("footer.html");
-        });
-        $(function () {
+            $("#top-bar").load("/banner.html");
+            $("#extra").load("/extra.html");
+            $("#navbar").load("/nav-bar.html");
+            $("#secondary").load("/widget-bar.html");
+            $("#page-footer").load("/footer.html");
             $("#end-stuff").load("/end-stuff.html");
         });
     </script>
 
+    <!-- Adds the general page formatting, code from MiyuKimura that I don't understand. -->
     <div id="extra"></div>
 </head>
 <body class="page-aboutpage-">
     <div id="page" class="hfeed site">
-        <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
-        <div class="header-bg">
-            <div class="site-branding">
-                <h1 class="site-title"><a href="index.html" rel="home" alt="Cross Reality Collaboration Sandbox">Cross Reality Collaboration Sandbox</a></h1>
-                <h2 class="site-description">Research Group</h2>
-            </div>
-            <!-- .site-branding -->
-        </div>
+        <!-- Adds in the top bar -->
+        <div id="top-bar"></div>
+
         <!-- Page Heading -->
         <header id="masthead" class="site-header" role="banner">
             <!-- Adds the nav bar -->
@@ -47,21 +37,32 @@
         <div id="content" class="site-content">
             <div id="primary" class="content-area">
                 <main id="main" class="site-main" role="main">
-                    <article id="post-3" class="post-3 page type-page status-publish hentry">
-                        <header class="entry-header">
-                            <h2 class="entry-title">About</h2>
-                        </header>
 
-                        <div class="entry-content">
-                            <p>Welcome to the <strong>Cross Reality Collaboration Sandbox (CRCS) research group</strong> at the Computing and Software Systems Division, University of Washington Bothell.</p>
+                    <h2 class="entry-title">About</h2>
 
-                            <p><img class="wp-image-146 alignleft" src="https://drive.google.com/uc?id=1ANA75jVzvq_vUseYHLAvIgxzy8w_OUJ5" alt="IMG_7900.JPG" width="353" height="264"/></p>
+                    <div class="entry-content">
+                        <p>
+                            Welcome to the <strong>Cross Reality Collaboration Sandbox (CRCS) research group</strong>
+                            at the Computing and Software Systems Division, University of Washington Bothell.
+                        </p>
 
-                            <p>Our team investigates how to support people working in collaboration addressing issues across realities where the solutions may span the continuum between physical and virtual spaces. One of the goals of our group is to facilitate the collaborations between participants that are located in a physical space of interests with participants that are located remotely.</p>
+                        <img class="wp-image-146 alignleft"
+                             src="https://drive.google.com/uc?id=1ANA75jVzvq_vUseYHLAvIgxzy8w_OUJ5"
+                             alt="IMG_7900.JPG" width="353" height="264" />
 
-                            <p><img class="alignnone size-full wp-image-57" src="https://drive.google.com/uc?id=1wG6owrpF_WYT0yps-ffQD5oxVphSOGxK" alt="Screen Shot 2017-04-10 at 13.49.06 "/></p>
-                        </div>
-                    </article>
+                        <p>
+                            Our team investigates how to support people working in collaboration addressing
+                            issues across realities where the solutions may span the continuum between physical
+                            and virtual spaces. One of the goals of our group is to facilitate the collaborations
+                            between participants that are located in a physical space of interests with
+                            participants that are located remotely.
+                        </p>
+
+                        <img class="alignnone size-full wp-image-57"
+                             src="https://drive.google.com/uc?id=1wG6owrpF_WYT0yps-ffQD5oxVphSOGxK"
+                             alt="Screen Shot 2017-04-10 at 13.49.06 " />
+
+                    </div>
                 </main>
             </div>
 

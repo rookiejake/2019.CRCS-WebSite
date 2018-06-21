@@ -1,12 +1,6 @@
-/*this is for the  second nav bar */
-/*body{
-    margin-top: 60px;
-}*/
 body{
-    /*remove the horzontal scroll bar*/
     overflow-x: hidden;
     margin-top: 60px;
-    /*font-family: "Tahoma", sans-serif;*/
     font-family: Poppins;
     background-color: white; 
    
@@ -32,27 +26,14 @@ p{
     font-size: 20px;
     color: black !important;
     font-weight: bold;
-}  /*this is for the  second nav bar */
+}
 
-/*.navbar-collapse{
-    background: #111111;
-}*/
-
-/*#collapsenav{
-    background: white;
-}*/
-
-/* media query for when the top nav bar transitons to mobile/tablet width, change the bg color to white*/
 @media(max-width: 800px){
-    /*.navbar-collapse{
-        background: #111111;
-    }*/
     #collapsenav{
         background-color: white;
     }
 }
 
-/*side bar nav styles*/
 .navbar{
     background-color:transparent;
     overflow: hidden;
@@ -106,7 +87,6 @@ p{
     left: 18px;
 }
 
-/* footer styles */
 .footerall{
     padding: 40px;
 }
