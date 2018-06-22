@@ -12,11 +12,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
         $(function () {
-            $("#extra").load("/extra.html");
-            $("#navbar").load("/nav-bar.html");
-            $("#secondary").load("/widget-bar.html");
-            $("#page-footer").load("/footer.html");
-            $("#end-stuff").load("/end-stuff.html");
+            $("#top-bar").load("/modules/banner.html");
+            $("#extra").load("/modules/extra.html");
+            $("#navbar").load("/modules/nav-bar.html");
+            $("#secondary").load("/modules/widget-bar.html");
+            $("#page-footer").load("/modules/footer.html");
+            $("#end-stuff").load("/modules/end-stuff.html");
         });
     </script>
 
@@ -26,20 +27,13 @@
 
 <body class="page-aboutpage-">
     <div id="page" class="hfeed site">
-        <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
-        <div class="header-bg">
-            <div class="site-branding">
-                <h1 class="site-title">
-                    <a href="../index.html" rel="home"
-                       alt="Cross Reality Collaboration Sandbox">
-                        Cross Reality Collaboration Sandbox
-                    </a>
-                </h1>
-                <h2 class="site-description">Research Group</h2>
-            </div>
-        </div>
+        <!-- Adds in the top bar -->
+        <div id="top-bar"></div>
+
+        <!-- Page Heading -->
         <header id="masthead" class="site-header" role="banner">
-            <div id="navbar" class="stick"></div>
+            <!-- Adds the nav bar -->
+            <div id="navbar" class="stick"> </div>
         </header>
 
         <div id="content" class="site-content">
@@ -50,7 +44,7 @@
                             <h2 class="entry-title">Publications</h2>
                         </header>
                         <div class="entry-content">
-                            
+
 
                             <p>
                                 <h3>Papers:</h3>
