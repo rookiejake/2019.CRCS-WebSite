@@ -16,11 +16,10 @@
             $("#navbar").load("/modules/nav-bar.html");
             $("#secondary").load("/modules/widget-bar.html");
             $("#page-footer").load("/modules/footer.html");
-            $("#end-stuff").load("/modules/end-stuff.html");
         });
     </script>
 
-    <!-- Adds the general page formatting, code from MiyuKimura that I don't understand. -->
+    <!-- Adds in stylesheet information-->
     <div id="extra"></div>
 </head>
 
@@ -88,11 +87,9 @@
                         the relative sizes of the target AR objects.
                     </p>
 
-                    <div style="position:relative;height:0;padding-bottom:56.25%">
-                        <iframe src="https://www.youtube.com/embed/9dztL0pUllM?ecver=2"
-                                width="640" height="360" frameborder="0"
-                                style="position:absolute;width:100%;height:100%;left:0" allowfullscreen />
-                    </div>
+                    <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/9dztL0pUllM"
+                            frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
                 </main>
             </div>
 
@@ -105,6 +102,8 @@
         <div id="page-footer" class="footer-wrap clear "></div>
 
     </div>
-    <div id="end-stuff"></div>
+
+    <!--for top grey bar -->
+    <div id="wpadminbar" class="nojq"></div>
 </body>
 </html>
