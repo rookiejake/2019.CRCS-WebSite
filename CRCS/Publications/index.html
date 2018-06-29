@@ -1,35 +1,25 @@
-﻿
-<!DOCTYPE html>
-<!-- created by MiyuKimura on May30, 2017 -->
+﻿<!DOCTYPE html>
+<!-- created by MiyuKimura on May10, 2017 -->
 <!-- Additions, formatting, and comments by Ben Clark, June 2018-->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Publications &#8211; Cross Reality Collaboration Sandbox</title>
+    <title>Cross Reality Collaboration Sandbox</title>
     <!-- Used to load in common html files used across the website. -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
         $(function () {
-            $("#top-bar").load("/modules/banner.html");
-            $("#extra").load("/modules/extra.html");
-            $("#navbar").load("/modules/nav-bar.html");
             $("#secondary").load("/modules/widget-bar.html");
             $("#page-footer").load("/modules/footer.html");
+            $("#page-top").load("/modules/page-top.html");
         });
     </script>
-    <!-- Adds in stylesheet information-->
-    <div id="extra"></div>
 </head>
 <body class="page-aboutpage-">
     <div id="page" class="hfeed site">
-        <!-- Adds in the top bar -->
-        <div id="top-bar"></div>
-        <!-- Page Heading -->
-        <header id="masthead" class="site-header" role="banner">
-            <!-- Adds the nav bar -->
-            <div id="navbar" class="stick"> </div>
-        </header>
+        <div id="page-top"></div>
+
         <div id="content" class="site-content">
             <div id="primary" class="content-area">
                 <main id="main" class="site-main" role="main">

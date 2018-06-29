@@ -6,40 +6,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cross Reality Collaboration Sandbox</title>
-
     <!-- Used to load in common html files used across the website. -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
         $(function () {
-            $("#top-bar").load("/modules/banner.html");
-            $("#extra").load("/modules/extra.html");
-            $("#navbar").load("/modules/nav-bar.html");
             $("#secondary").load("/modules/widget-bar.html");
             $("#page-footer").load("/modules/footer.html");
+            $("#page-top").load("/modules/page-top.html");
         });
     </script>
-
-    <!-- Adds in stylesheet information-->
-    <div id="extra"></div>
 </head>
-
 <body class="page-aboutpage-">
     <div id="page" class="hfeed site">
-        <!-- Adds in the top bar -->
-        <div id="top-bar"></div>
-
-        <!-- Page Heading -->
-        <header id="masthead" class="site-header" role="banner">
-            <!-- Adds the nav bar -->
-            <div id="navbar" class="stick"> </div>
-        </header>
+        <div id="page-top"></div>
 
         <div id="content" class="site-content">
             <div id="primary" class="content-area">
                 <main id="main" class="site-main" role="main">
                     <h2 class="entry-title">Room Sampling with Multi-Texture with Tango</h2>
                     <h5 style="text-align:right;">By Shen Li</h5>
-
                     <p>
                         3D reconstruction with Tango is relatively easy. Tango SDK include a
                         function called Tango3DRExtractWholeMesh with will return a vertices[],
@@ -52,27 +37,20 @@
                         a small modification on HoloToolKit.SimpleMeshSerializer so it can
                         serialize and deserialize the mesh that Tango create.
                     </p>
-
                     <img class="alignleft"
                          src="https://drive.google.com/uc?id=19yig3UUkitZz7sUL47lDuonkwQoMGOrj"
                          width="367" height="207" />
-
                     <img class="alignleft"
                          src="https://drive.google.com/uc?id=1y2ZVIEY-XSMs4HcMbW3kfuNl6PPiiiwe"
                          width="367" height="207" />
                 </main>
             </div>
-
             <!-- Adds the side bar -->
             <div id="secondary" class="widget-area " role="complementary"></div>
-
         </div>
-
         <!-- Adds the page footer -->
         <div id="page-footer" class="footer-wrap clear "></div>
-
     </div>
-
     <!--for top grey bar -->
     <div id="wpadminbar" class="nojq"></div>
 </body>

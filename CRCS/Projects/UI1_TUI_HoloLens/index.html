@@ -6,33 +6,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cross Reality Collaboration Sandbox</title>
-
     <!-- Used to load in common html files used across the website. -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
         $(function () {
-            $("#top-bar").load("/modules/banner.html");
-            $("#extra").load("/modules/extra.html");
-            $("#navbar").load("/modules/nav-bar.html");
             $("#secondary").load("/modules/widget-bar.html");
             $("#page-footer").load("/modules/footer.html");
+            $("#page-top").load("/modules/page-top.html");
         });
     </script>
-
-    <!-- Adds in stylesheet information-->
-    <div id="extra"></div>
 </head>
-
 <body class="page-aboutpage-">
     <div id="page" class="hfeed site">
-        <!-- Adds in the top bar -->
-        <div id="top-bar"></div>
-
-        <!-- Page Heading -->
-        <header id="masthead" class="site-header" role="banner">
-            <!-- Adds the nav bar -->
-            <div id="navbar" class="stick"> </div>
-        </header>
+        <div id="page-top"></div>
 
         <div id="content" class="site-content">
             <div id="primary" class="content-area">
@@ -40,13 +26,10 @@
                     <h2 class="entry-title">
                         Object Manipulation with Tangible User Interface for Head Mounted Augmented Reality&nbsp;Devices
                     </h2>
-
                     <h5 style="text-align:right;">By Michael Tanaya</h5>
-
                     <iframe class="alignright" width="380" height="260"
                             src="https://www.youtube.com/embed/BinnzBbsJ-U"
                             frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
-
                     <p>
                         Recent advances in technology enabled a new generation of Augmented Reality
                         (AR) development where the near seamless integration and interaction
@@ -59,11 +42,9 @@
                         immersive experience with stereoscopic display, and hands-free interaction
                         with the AR world.
                     </p>
-
                     <iframe class="alignright" width="380" height="260"
                             src="https://www.youtube.com/embed/1LzR0gLyKgE"
                             frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
-
                     <p>
                         The HoloLens supports object manipulation with Natural User Interface (NUI),
                         with the inherent NUI shortcomings of lacking in precision and intuition.
@@ -80,20 +61,14 @@
                         general, object size adjustments in particular, and a more efficient and
                         effective object manipulation experience.
                     </p>
-
                 </main>
             </div>
-
             <!-- Adds the side bar -->
             <div id="secondary" class="widget-area " role="complementary"></div>
-
         </div>
-
         <!-- Adds the page footer -->
         <div id="page-footer" class="footer-wrap clear "></div>
-
     </div>
-
     <!--for top grey bar -->
     <div id="wpadminbar" class="nojq"></div>
 </body>

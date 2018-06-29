@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
-<!-- created by MiyuKimura on May30, 2017 -->
+<!-- created by MiyuKimura on May10, 2017 -->
+<!-- Additions, formatting, and comments by Ben Clark, June 2018-->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,73 +10,76 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
         $(function () {
-            $("#top-bar").load("/modules/banner.html");
-            $("#extra").load("/modules/extra.html");
-            $("#navbar").load("/modules/nav-bar.html");
             $("#secondary").load("/modules/widget-bar.html");
             $("#page-footer").load("/modules/footer.html");
+            $("#page-top").load("/modules/page-top.html");
         });
     </script>
-    <!-- Adds in stylesheet information-->
-    <div id="extra"></div>
 </head>
 <body class="page-aboutpage-">
     <div id="page" class="hfeed site">
-        <!-- Adds in the top bar -->
-        <div id="top-bar"></div>
-        <!-- Page Heading -->
-        <header id="masthead" class="site-header" role="banner">
-            <!-- Adds the nav bar -->
-            <div id="navbar" class="stick"> </div>
-        </header>
+        <div id="page-top"></div>
+
         <div id="content" class="site-content">
             <div id="primary" class="content-area">
                 <main id="main" class="site-main" role="main">
                     <h2 class="entry-title">Projects</h2>
                     <h3>Room Sampling</h3>
-                    <p>
-                        This section is about different projects that relate to room sampling
-                        technologies and how they are being used.
-                    </p>
-                    <h5><a href="/Projects/RoomSample1_HoloLens/index.html">Room Sampling with Multi-Texture with HoloLens</a></h5>
-                    <p>
-                        This project used a HoloLens from Microsoft to make 3D scans of the room using the built in cameras
-                        on the HoloLens. This project also focused on compartability with the Augmented Space Library
-                    </p>
-                    <h5><a href="/Projects/RoomSample2_Tango/index.html">Room Sampling with Multi-Texture with Tango</a></h5>
-                    <p>
-                        This project used a Tango phone from Google to make 3D scans of a room.
-                        The project also focused on compatability with the Augmented Space Library.
-                    </p>
+                    <h5>2017</h5>
+                    <ul>
+                        <li>
+                            <p>Thomas Brown, November: <a href="/Projects/RoomSample1_HoloLens/index.html">Room Sampling with Multi-Texture with HoloLens</a></p>
+                        </li>
+                        <li>
+                            <p>Shen Li, June: <a href="/Projects/RoomSample2_Tango/index.html">Room Sampling with Multi-Texture with Tango</a></p>
+                        </li>
+                    </ul>
                     <h3>Applications</h3>
-                    <p>This section is about the different project that relate to applications of AR/VR</p>
-                    <h5><a href="/Projects/App1_Teaching/index.html">Teaching Materials with AR/VR Collaborations</a></h5>
-                    <p>
-                        Teaching kids programming concepts using AR/VR technology. The application will focus
-                        on being compatable with any type of AR/VR gear.
-                    </p>
-                    <h5><a href="/Projects/App2_CRCS_Kinect/index.html">Cross Reality Collaboration via the Kinect</a></h5>
-                    <p>
-                        Getting compatability with the Microsoft Kinect. This application focuses on
-                        integrating the Microsoft Kinect into the Cross Reality Collaboration Sandbox.
-                    </p>
-                    <h5><a href="/Projects/App3_AndroidGame/index.html">A Multiplayer VR Game on Android Device</a></h5>
-                    <p>
-                        Getting compatability with the Android mobile devices. This application focuses on
-                        integrating the Android mobile devices into the Cross Reality Collaboration Sandbox.
-                    </p>
+                    <h5>2018</h5>
+                    <ul>
+                        <li>
+                            <p>Nicholas Carpenetti and Bobby Damore, May: <a href="/Projects/VRPortal/index.html">VR/AR Portal Project</a></p>
+                        </li>
+                    </ul>
+
+                    <h5>2017</h5>
+                    <ul>
+                        <li>
+                            <p>
+                                Anjal Doshi and Nikhil Grandhi, December: <a href="/Projects/AROC/index.html">AR Obstacle Course</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>Jeremy Albert, November: <a href="/Projects/VRLocomotion/index.html">Comparison of Virtual Reality Locomotion Methods</a></p>
+                        </li>
+                        <li>
+                            <p>Taran Christensen, August: <a href="/Projects/App1_Teaching/index.html">Teaching Materials with AR/VR Collaborations</a></p>
+                        </li>
+                        <li>
+                            <p>Roman Trayce, ??: <a href="/Projects/App2_CRCS_Kinect/index.html">Cross Reality Collaboration via the Kinect</a></p>
+                        </li>
+                        <li>
+                            <p>Griffin Dziok, June: <a href="/Projects/App3_AndroidGame/index.html">A Multiplayer VR Game on Android Device</a></p>
+                        </li>
+                    </ul>
+
                     <h3>UI Research</h3>
-                    <p>This section is about the different project that relate to UI research</p>
-                    <h5>
-                        <a href="/Projects/UI1_TUI_HoloLens ">
-                            Object Manipulation with Tangible User Interface for Head Mounted Augmented Reality Devices
-                        </a>
-                    </h5>
-                    <p>
-                        This section is about Object Manipulation with Tangible User Interface for Head Mounted Augmented Reality Devices
-                    </p>
-                    <h5><a href="/Projects/UI2_MobileAR ">Object Manipulation on Mobile AR</a></h5>
-                    <p>This section is about Object Manipulation on Mobile AR</p>
+                    <h5>2017</h5>
+                    <ul>
+                        <li>
+                            <p>
+                                Michael Tanaya, June:
+                                <a href="/Projects/UI1_TUI_HoloLens ">
+                                    Object Manipulation with Tangible User Interface for Head Mounted Augmented Reality Devices
+                                </a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Koukeng Yang, June: <a href="/Projects/UI2_MobileAR ">Object Manipulation on Mobile AR</a>
+                            </p>
+                        </li>
+                    </ul>
                 </main>
             </div>
             <div id="secondary" class="widget-area" role="complementary"></div>

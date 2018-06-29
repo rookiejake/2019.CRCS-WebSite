@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <!-- created by MiyuKimura on May10, 2017 -->
 <!-- Additions, formatting, and comments by Ben Clark, June 2018-->
 <html lang="en">
@@ -10,24 +10,16 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
         $(function () {
-            $("#top-bar").load("/modules/banner.html");
-            $("#extra").load("/modules/extra.html");
-            $("#navbar").load("/modules/nav-bar.html");
             $("#secondary").load("/modules/widget-bar.html");
             $("#page-footer").load("/modules/footer.html");
-        });</script>
-    <!-- Adds in stylesheet information-->
-    <div id="extra"></div>
+            $("#page-top").load("/modules/page-top.html");
+        });
+    </script>
 </head>
 <body class="page-aboutpage-">
     <div id="page" class="hfeed site">
-        <!-- Adds in the top bar -->
-        <div id="top-bar"></div>
-        <!-- Page Heading -->
-        <header id="masthead" class="site-header" role="banner">
-            <!-- Adds the nav bar -->
-            <div id="navbar" class="stick"> </div>
-        </header>
+        <div id="page-top"></div>
+
         <div id="content" class="site-content">
             <div id="primary" class="content-area">
                 <main id="main" class="site-main" role="main">

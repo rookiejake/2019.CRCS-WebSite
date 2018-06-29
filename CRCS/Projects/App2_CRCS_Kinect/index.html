@@ -6,51 +6,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cross Reality Collaboration Sandbox</title>
-
     <!-- Used to load in common html files used across the website. -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
         $(function () {
-            $("#top-bar").load("/modules/banner.html");
-            $("#extra").load("/modules/extra.html");
-            $("#navbar").load("/modules/nav-bar.html");
             $("#secondary").load("/modules/widget-bar.html");
             $("#page-footer").load("/modules/footer.html");
+            $("#page-top").load("/modules/page-top.html");
         });
     </script>
-
-    <!-- Adds in stylesheet information-->
-    <div id="extra"></div>
 </head>
-
 <body class="page-aboutpage-">
     <div id="page" class="hfeed site">
-        <!-- Adds in the top bar -->
-        <div id="top-bar"></div>
-
-        <!-- Page Heading -->
-        <header id="masthead" class="site-header" role="banner">
-            <!-- Adds the nav bar -->
-            <div id="navbar" class="stick"> </div>
-        </header>
+        <div id="page-top"></div>
 
         <div id="content" class="site-content">
             <div id="primary" class="content-area">
                 <main id="main" class="site-main" role="main">
                     <h2 class="entry-title">Cross Reality Collaboration via the Kinect</h2>
                     <h5 style="text-align:right;">By Roman, Trayce</h5>
-
                     <img class="alignright"
                          src="https://drive.google.com/uc?id=1349-vVZJdBKGJ-n0kGOWzi7Um3ks09YW"
                          alt="20170508_141121_HoloLens" width="367" height="207" />
-
                     <p>
                         Our project is aims to build the ground work for Kinect integration
                         into the Cross Reality Collaboration Sandbox. We are working to build
                         a set of intuitive controls and systems that will allow users to jump
                         right in and start interacting within the digital space.
                     </p>
-
                     <p>
                         The Kinect offers a unique challenge in creating a user interaction that is
                         intuitive and easy to use. When a user enters the Kinect Camera space, a
@@ -65,7 +48,6 @@
                         with the system. In the future, we would like the system to support voice
                         controls and full body gesture recognition
                     </p>
-
                     <p>
                         Another limitation presented by the Kinect is that it lacks the ability to
                         navigate around larger environment. A positional UI was designed around this
@@ -79,23 +61,17 @@
                         in and out by grabbing the environment with both hands similar to a pinch
                         zoom feature you find on smart phones
                     </p>
-
                     <img class="alignnone"
                          src="https://drive.google.com/uc?id=1JUGBbTu-FJVaEw9qHiRommOAK0DshhuU"
                          alt="Partially_Shaded_Room" width="661" height="327" />
                 </main>
             </div>
-
             <!-- Adds the side bar -->
             <div id="secondary" class="widget-area " role="complementary"></div>
-
         </div>
-
         <!-- Adds the page footer -->
         <div id="page-footer" class="footer-wrap clear "></div>
-
     </div>
-
     <!--for top grey bar -->
     <div id="wpadminbar" class="nojq"></div>
 </body>
