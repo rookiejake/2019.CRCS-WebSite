@@ -10,7 +10,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
         $(function () {
-            $("#secondary").load("./modules/widget-bar.html");
             $("#page-footer").load("./modules/footer.html");
             $("#page-top").load("./modules/page-top.html");
         });
@@ -23,7 +22,7 @@
 
         <div id="content" class="site-content">
             <div id="primary" class="content-area">
-                <main id="main" class="site-main" role="main">
+                <main id="main">
                     <h2 class="entry-title">About</h2>
                     <p>
                         Welcome to the <strong>Cross Reality Collaboration Sandbox (CRCS) research group</strong>
@@ -32,6 +31,11 @@
                     <img class="alignleft"
                          src="https://drive.google.com/uc?id=1ANA75jVzvq_vUseYHLAvIgxzy8w_OUJ5"
                          alt="IMG_7900.JPG" width="353" height="264" />
+
+                    <img class="alignright"
+                         src="https://drive.google.com/uc?id=1CJDHUbfY5zDUEHNqE1uVpS8SkBZnIm6y"
+                         alt="IMG_7900.JPG" width="353" height="264" />
+
                     <p>
                         Our team investigates how to support people working in collaboration addressing
                         issues across realities where the solutions may span the continuum between physical
@@ -39,18 +43,25 @@
                         between participants that are located in a physical space of interests with
                         participants that are located remotely.
                     </p>
+
+
+
+                    <br clear="all" />
+
+                    <h2>Acknowledgements</h2>
+
+                    <p>
+                        We would like to thank the Microsoft Mixed Reality Academic Seeding Program for the generous equipment and SDK donations.
+                    </p>
+
                     <img class="alignnone"
                          src="https://drive.google.com/uc?id=1wG6owrpF_WYT0yps-ffQD5oxVphSOGxK"
                          alt="Screen Shot 2017-04-10 at 13.49.06 " />
                 </main>
             </div>
-            <!-- Adds the side bar -->
-            <div id="secondary" class="widget-area " role="complementary"></div>
         </div>
         <!-- Adds the page footer -->
         <div id="page-footer" class="footer-wrap clear "></div>
     </div>
-    <!--for top grey bar -->
-    <div id="wpadminbar" class="nojq"></div>
 </body>
 </html>
