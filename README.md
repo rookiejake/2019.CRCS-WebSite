@@ -1,4 +1,3 @@
-# KelvinCRCS
 # Cross Reality Collaboration Sandbox - Project Website
 Project Overseer: Kelvin Sung
 
