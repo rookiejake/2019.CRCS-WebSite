@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<!-- saved from url=(0088)http://students.washington.edu/aluc4rd/ASL/api/ASL.VirtualReality/VRInitilizationScript/ -->
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="description">
+    <meta name="keywords" content="static content generator,static site generator,static site,HTML,web development,.NET,C#,Razor,Markdown,YAML">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--
+        <link rel="shortcut icon" href="http://students.washington.edu/aluc4rd/ASL/assets/img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="http://students.washington.edu/aluc4rd/ASL/assets/img/favicon.ico" type="image/x-icon">
+    -->
+    <title>Summer 2018 ASL Documentation - API - VRInitilizationScript Class</title>
+    <link href="./API_site_files/mermaid.css" rel="stylesheet">
+    <link href="./API_site_files/highlight.css" rel="stylesheet">
+    <link href="./API_site_files/bootstrap.css" rel="stylesheet">
+    <link href="./API_site_files/AdminLTE.css" rel="stylesheet">
+    <link href="./API_site_files/theme.css" rel="stylesheet">
+    <link href="./API_site_files/css" rel="stylesheet">
+    <link href="./API_site_files/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="./API_site_files/override.css" rel="stylesheet">
+    <script src="./API_site_files/jquery-2.2.3.min.js.download"></script>
+    <script src="./API_site_files/bootstrap.min.js.download"></script>
+    <script src="./API_site_files/app.min.js.download"></script>
+    <script src="./API_site_files/highlight.pack.js.download"></script>
+    <script src="./API_site_files/jquery.slimscroll.min.js.download"></script>
+    <script src="./API_site_files/jquery.sticky-kit.min.js.download"></script>
+    <script src="./API_site_files/mermaid.min.js.download"></script>
+    <!--[if lt IE 9]>
+        <script src="/aluc4rd/ASL/assets/js/html5shiv.min.js"></script>
+        <script src="/aluc4rd/ASL/assets/js/respond.min.js"></script>
+        <![endif]-->
+
+
+</head>
+
+<body class="wyam layout-boxed" crio-installed="true">
+    <div class="top-banner"></div>
+    <div class="wrapper with-container">
+
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper" style="min-height: 991px;">
+            <section class="content-header">
+                <h1>V<wbr>R<wbr>Initilization<wbr>Script <small>Class</small></h1>
+            </section>
+            <section class="content">
+
+
+                <h1 id="Summary">Summary</h1>
+                <div class="lead">
+                    This script is responsible for initilizing all required components for using a VR user
+                    in ASL with a corresponding networked representation.
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <dl class="dl-horizontal">
+
+                                    <dt>Namespace</dt>
+                                    <dd><a href="http://students.washington.edu/aluc4rd/ASL/api/ASL.VirtualReality">ASL<wbr>.VirtualReality</a></dd>
+
+
+                                    <dt>Base Types</dt>
+                                    <dd>
+                                        <ul class="list-unstyled">
+                                            <li>Photon<wbr>.PunBehaviour</li>
+                                            <li><a href="http://students.washington.edu/aluc4rd/ASL/api/ASL.LocalEventSystem/LocalEventHandler">LocalEventHandler</a></li>
+                                        </ul>
+                                    </dd>
+
+
+                                </dl>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mermaid" data-processed="true"><svg id="mermaidChart0" xmlns="http://www.w3.org/2000/svg"
+                                        height="100%" viewBox="0 0 182 250" style="max-width:182px;">
+                                        <style type="text/css" title="mermaid-svg-internal-css">
+                                            /*  */
+                                            #mermaidChart0 .node&gt;
+
+                                            rect {
+                                                ;
+                                            }
+
+                                            #mermaidChart0 .node text {
+                                                fill: #000;
+                                                stroke: none;
+                                                font-weight: 300;
+                                                font-family: "Helvetica Neue", Helvetica, Arial, sans-serf;
+                                                font-size: 14px;
+                                            }
+
+                                            #mermaidChart0 .edgeLabel text {
+                                                fill: #000;
+                                                stroke: none;
+                                                font-weight: 300;
+                                                font-family: "Helvetica Neue", Helvetica, Arial, sans-serf;
+                                                font-size: 14px;
+                                            }
+
+                                            #mermaidChart0 .cluster rect {
+                                                rx: 4px;
+                                                fill: rgb(255, 255, 222);
+                                                rx: 4px;
+                                                stroke: rgb(170, 170, 51);
+                                                stroke-width: 1px;
+                                            }
+
+                                            .mermaid .label {
+                                                color: rgb(51, 51, 51);
+                                            }
+
+                                            .node rect,
+                                            .node circle,
+                                            .node ellipse,
+                                            .node polygon {
+                                                fill: rgb(236, 236, 255);
+                                                stroke: rgb(204, 204, 255);
+                                                stroke-width: 1px;
+                                            }
+
+                                            .edgePath .path {
+                                                stroke: rgb(51, 51, 51);
+                                            }
+
+                                            .edgeLabel {
+                                                background-color: rgb(232, 232, 232);
+                                            }
+
+                                            * {
+                                                box-sizing: border-box;
+                                            }
+
+                                            .label {
+                                                display: inline;
+                                                padding: 0.2em 0.6em 0.3em;
+                                                font-size: 75%;
+                                                font-weight: bold;
+                                                line-height: 1;
+                                                color: rgb(255, 255, 255);
+                                                text-align: center;
+                                                white-space: nowrap;
+                                                vertical-align: baseline;
+                                                border-radius: 0.25em;
+                                            }
+
+                                            .node rect,
+                                            .node circle,
+                                            .node ellipse,
+                                            .node polygon {
+                                                fill: rgb(239, 245, 251);
+                                                stroke: rgb(0, 0, 0);
+                                            }
+
+                                            .type-node rect,
+                                            .type-node circle,
+                                            .type-node ellipse,
+                                            .type-node polygon {
+                                                fill: rgb(160, 196, 228);
+                                                stroke: rgb(0, 0, 0);
+                                            }
+
+                                            /*  */
+                                        </style>
+                                        <g>
+                                            <g class="output">
+                                                <g class="clusters"></g>
+                                                <g class="edgePaths">
+                                                    <g class="edgePath" style="opacity: 1;">
+                                                        <path class="path" d="M81,130L81,155L81,180" marker-end="url(#arrowhead12)"
+                                                            style="fill:none"></path>
+                                                        <defs>
+                                                            <marker id="arrowhead12" viewBox="0 0 10 10" refX="9" refY="5"
+                                                                markerUnits="strokeWidth" markerWidth="8" markerHeight="6"
+                                                                orient="auto">
+                                                                <path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath"
+                                                                    style="stroke-width: 1; stroke-dasharray: 1, 0;"></path>
+                                                            </marker>
+                                                        </defs>
+                                                    </g>
+                                                    <g class="edgePath" style="opacity: 1;">
+                                                        <path class="path" d="M81,50L81,75L81,100" marker-end="url(#arrowhead13)"
+                                                            style="fill:none"></path>
+                                                        <defs>
+                                                            <marker id="arrowhead13" viewBox="0 0 10 10" refX="9" refY="5"
+                                                                markerUnits="strokeWidth" markerWidth="8" markerHeight="6"
+                                                                orient="auto">
+                                                                <path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath"
+                                                                    style="stroke-width: 1; stroke-dasharray: 1, 0;"></path>
+                                                            </marker>
+                                                        </defs>
+                                                    </g>
+                                                </g>
+                                                <g class="edgeLabels">
+                                                    <g class="edgeLabel" transform="" style="opacity: 1;">
+                                                        <g transform="translate(0,0)" class="label">
+                                                            <foreignobject width="0" height="0">
+                                                                <div style="display: inline-block; white-space: nowrap;"
+                                                                    xmlns="http://www.w3.org/1999/xhtml"><span class="edgeLabel"></span></div>
+                                                            </foreignobject>
+                                                        </g>
+                                                    </g>
+                                                    <g class="edgeLabel" transform="" style="opacity: 1;">
+                                                        <g transform="translate(0,0)" class="label">
+                                                            <foreignobject width="0" height="0">
+                                                                <div style="display: inline-block; white-space: nowrap;"
+                                                                    xmlns="http://www.w3.org/1999/xhtml"><span class="edgeLabel"></span></div>
+                                                            </foreignobject>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                                <g class="nodes">
+                                                    <g class="node" id="Base0" transform="translate(81,115)" style="opacity: 1;">
+                                                        <rect rx="0" ry="0" x="-54" y="-15" width="108" height="30"></rect>
+                                                        <g class="label" transform="translate(0,0)">
+                                                            <g transform="translate(-44,-5)">
+                                                                <foreignobject width="88" height="10">
+                                                                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">LocalEventHandler</div>
+                                                                </foreignobject>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                    <g class="node type-node" id="Type" transform="translate(81,195)"
+                                                        style="opacity: 1;">
+                                                        <rect rx="0" ry="0" x="-57" y="-15" width="114" height="30"></rect>
+                                                        <g class="label" transform="translate(0,0)">
+                                                            <g transform="translate(-47,-5)">
+                                                                <foreignobject width="94" height="10">
+                                                                    <div style="display: inline-block; white-space: nowrap;"
+                                                                        xmlns="http://www.w3.org/1999/xhtml">VRInitilizationScript</div>
+                                                                </foreignobject>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                    <g class="node" id="Base1" transform="translate(81,35)" style="opacity: 1;">
+                                                        <rect rx="0" ry="0" x="-61" y="-15" width="122" height="30"></rect>
+                                                        <g class="label" transform="translate(0,0)">
+                                                            <g transform="translate(-51,-5)">
+                                                                <foreignobject width="102" height="10">
+                                                                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Photon.PunBehaviour</div>
+                                                                </foreignobject>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h1 id="Syntax">Syntax</h1>
+                <pre><code class="hljs ruby">public <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">VRInitilizationScript</span> : <span class="hljs-title">LocalEventHandler</span></span></code></pre>
+
+
+
+
+
+
+
+
+                <h1 id="fields">Fields</h1>
+                <div class="box">
+                    <div class="box-body no-padding table-responsive">
+                        <table class="table table-striped table-hover three-cols">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Constant Value</th>
+                                    <th>Summary</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="http://students.washington.edu/aluc4rd/ASL/api/ASL.VirtualReality/VRInitilizationScript/38370980.html">DeviceToUse</a></td>
+                                    <td></td>
+                                    <td>
+                                        <div>
+                                            The VR device to be used by the player.
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="http://students.washington.edu/aluc4rd/ASL/api/ASL.VirtualReality/VRInitilizationScript/B7A7A6F8.html">origin</a></td>
+                                    <td></td>
+                                    <td>
+                                        <div>
+                                            Starting position for the VR user
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="http://students.washington.edu/aluc4rd/ASL/api/ASL.VirtualReality/VRInitilizationScript/C53EC2AF.html">simulator</a></td>
+                                    <td></td>
+                                    <td>
+                                        <div>
+                                            Reference to the Simulator SDK setup
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="http://students.washington.edu/aluc4rd/ASL/api/ASL.VirtualReality/VRInitilizationScript/80ECB084.html">steamVR</a></td>
+                                    <td></td>
+                                    <td>
+                                        <div>
+                                            Reference to the SteamVR SDK setup
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+
+
+                <h1 id="Methods">Methods</h1>
+                <div class="box">
+                    <div class="box-body no-padding table-responsive">
+                        <table class="table table-striped table-hover three-cols">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Value</th>
+                                    <th>Summary</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="http://students.washington.edu/aluc4rd/ASL/api/ASL.LocalEventSystem/LocalEventHandler/1AF35C3C.html">OnDestroy<wbr>()<wbr></a></td>
+                                    <td>void</td>
+                                    <td>
+                                        <div>
+                                            Unsubscribes from the lcal events system to prevent a memory leak.
+                                        </div>
+                                        <div><small><em>Inherited from <a href="http://students.washington.edu/aluc4rd/ASL/api/ASL.LocalEventSystem/LocalEventHandler">LocalEventHandler</a></em></small></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="http://students.washington.edu/aluc4rd/ASL/api/ASL.LocalEventSystem/LocalEventHandler/D8CFDE3A.html">OnEnable<wbr>()<wbr></a></td>
+                                    <td>void</td>
+                                    <td>
+                                        <div>
+                                            Subscribes to Local event system, when a local event is trigger the
+                                            OnLocalEvent function will be called.
+                                        </div>
+                                        <div><small><em>Inherited from <a href="http://students.washington.edu/aluc4rd/ASL/api/ASL.LocalEventSystem/LocalEventHandler">LocalEventHandler</a></em></small></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="http://students.washington.edu/aluc4rd/ASL/api/ASL.VirtualReality/VRInitilizationScript/4A17B86E.html">OnJoinedRoom<wbr>()<wbr></a></td>
+                                    <td>void</td>
+                                    <td>
+                                        <div>
+                                            This function will attempt to call for the creation of networked
+                                            representation of a VR player on connecting to a room.
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="http://students.washington.edu/aluc4rd/ASL/api/ASL.VirtualReality/VRInitilizationScript/4B8CAC59.html">OnLocalEvent<wbr>(object,
+                                            <wbr>ASLLocalEventManager<wbr>.LocalEventArgs)<wbr></a></td>
+                                    <td>void</td>
+                                    <td>
+                                        <div>
+                                            Event handler for local events relating to the creation of a VR player.
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="http://students.washington.edu/aluc4rd/ASL/api/ASL.LocalEventSystem/LocalEventHandler/333F86A8.html">OnPhotonInstantiate<wbr>(PhotonMessageInfo)<wbr></a></td>
+                                    <td>void</td>
+                                    <td>
+                                        <div>
+                                            Callback function that is triggered when an object is created via photon.
+                                        </div>
+                                        <div><small><em>Inherited from <a href="http://students.washington.edu/aluc4rd/ASL/api/ASL.LocalEventSystem/LocalEventHandler">LocalEventHandler</a></em></small></div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+
+
+
+
+            </section>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="main-footer">
+        </footer>
+
+    </div>
+    <div class="wrapper bottom-wrapper">
+        <footer class="bottom-footer">
+            Generated by <a href="https://wyam.io/">Wyam</a>
+        </footer>
+    </div>
+    <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
+
+    <script>
+        // Close the sidebar if we select an anchor link
+        $(".main-sidebar a[href^='#']:not('.expand')").click(function () {
+            $(document.body).removeClass('sidebar-open');
+        });
+
+        $(document).load(function () {
+            mermaid.initialize({
+                flowchart: {
+                    htmlLabels: false,
+                    useMaxWidth: false
+                }
+            });
+            mermaid.init(undefined, ".mermaid")
+            $('svg').addClass('img-responsive');
+
+            $('pre code').each(function (i, block) {
+                hljs.highlightBlock(block);
+            });
+        });
+        hljs.initHighlightingOnLoad();
+
+        // Back to top
+        $(window).scroll(function () {
+            if ($(this).scrollTop() >= 200) { // If page is scrolled more than 50px
+                $('#return-to-top').fadeIn(1000); // Fade in the arrow
+            } else {
+                $('#return-to-top').fadeOut(1000); // Else fade out the arrow
+            }
+        });
+        $('#return-to-top').click(function () { // When arrow is clicked
+            $('body,html').animate({
+                scrollTop: 0 // Scroll to top of body
+            }, 500);
+        });
+    </script>
+
+    <div class="mermaidTooltip" style="opacity: 0;"></div>
+    <div id="crio-embedded">
+        <a href="http://students.washington.edu/aluc4rd/ASL/api/ASL.VirtualReality/VRInitilizationScript/#" id="crio-embedded-close">x</a>
+
+        <section class="crio-embedded-header">
+            <h4>Crio</h4>
+        </section>
+
+
+        <div id="crio-embed-controls">
+            <p>Crio is currently not available on this site. Please use the textbox below:</p> <button id="request-new-site">Request
+                to have Crio on this website</button>
+        </div>
+
+
+        <p id="refresh-warning"><strong>Refresh</strong> the page after changing this setting.</p>
+        <p id="feedback-box">
+            Problem? <a class="strong-link" href="https://feedback.userreport.com/bd584d5c-9d6b-49bc-859a-44bdaa4448b6/#submit/bug"
+                target="_blank">Report a bug</a> or <a class="strong-link" href="https://feedback.userreport.com/bd584d5c-9d6b-49bc-859a-44bdaa4448b6/"
+                target="_blank">submit feedback</a>.
+        </p>
+
+        <h4 style="font-size: 13pt">Crio Extension Editor</h4>
+        <div id="crio-status-message-popup" style="text-align:center"></div>
+        <div id="crio-embedded-editable" contenteditable="true" data-gramm_editor="false" spellcheck="false"
+            placeholder="You can type/paste some text here and use Crio."></div>
+
+        <div style="text-align: right; margin-top: 1em;">
+            <a href="https://crio.stanford.edu/editor" target="_blank">Editor</a>&nbsp;|&nbsp;
+            <a href="https://crio.stanford.edu/welcome" target="_blank">Quickstart</a>&nbsp;|&nbsp;
+            <a href="https://crio.stanford.edu/faq" target="_blank">FAQ</a>
+        </div>
+    </div>
+</body>
+<crio-controls style="display: none;">
+    <div id="edit-controls-hidden" style="opacity: 0; height: 0px;"></div>
+    <div id="edit-controls-buttons">
+        <div class="edit-controls-row">
+            <div id="accept-button">
+                <div id="accept-check"><i class="icon-crio-check"></i></div>
+                <div id="accept-text"></div>
+            </div>
+        </div>
+        <div class="edit-controls-row">
+            <div id="ignore-button">
+                <div id="ignore-times"><i class="icon-crio-times"></i></div>
+                <div id="ignore-text">Ignore</div>
+            </div>
+        </div>
+    </div>
+</crio-controls>
+
+</html>
