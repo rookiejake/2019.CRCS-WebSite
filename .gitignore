@@ -1,2 +1,3 @@
 # Visual Studio cache directory
 .vs/
+.vscode/settings.json
