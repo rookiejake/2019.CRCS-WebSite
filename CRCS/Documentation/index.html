@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,24 +14,141 @@
         });
     </script>
 </head>
+
 <body class="page-aboutpage-">
     <div id="page" class="hfeed site">
         <div id="page-top"></div>
 
         <div id="content" class="site-content">
+            <section class="content-header">
+                <h1 style="text-align: center;"><sup>Virtual Reality Tutorial</sup></h1>
+            </section>
             <div id="primary" class="content-area">
-                <main id="main" class="site-main" role="main">
-                    <h2 class="entry-title">Documentation</h2>
-                    <h3>ASL</h3>
-                    <ul>
-                        <li><a href="http://students.washington.edu/aluc4rd/ASL/VR/tutorial/">Justin's VR Tutorial</a></li>
-                    </ul>
-                </main>
-            </div>
-            <div id="secondary" class="widget-area" role="complementary">
+                <h1>Installation/Setup</h1>
+                <h2>Requirements</h2>
+                <p>Virtual reality requires special hardware to run. Currently ASL has the most built in tested support
+                    for
+                    SteamVR devices.
+                    <br />
+                    <b>Steam has the following as reccomended specifications for running SteamVR:</b>
+                </p>
+                <ul>
+                    <li><b>OS:</b> Windows </li>
+                    <li><b>Processor:</b> Intel i5-4590 / AMD FX 8350 equivalent or greater</li>
+                    <li><b>Memory:</b> 4 GB RAM</li>
+                    <li><b>Graphics:</b> NVIDIA GeForce GTX 970 / AMD Radeon R9 290 equivalent or greater</li>
+                </ul>
+                <p>The work machine in graduate lab features a GTX 1070, which is more than powerful enough given the
+                    scope
+                    of the assets in ASL and has been tested with the HTC Vive.</p>
+                <p><b>Note:</b> You may experience technical difficulties with setting up the Occulus Rift on this PC
+                    &amp;
+                    it will not support the Windows Mixed Reality Devices</p>
+                <p> ASL also has support for the Windows Mixed Reality Device using SteamVR, which has the following
+                    requirments</p>
+                <ul>
+                    <li>Requires a 64-bit processor and operating system</li>
+                    <li><b>OS:</b> Windows 10 April 2018 Update</li>
+                    <li><b>Processor:</b> Intel i5-4590 / AMD FX 8350 equivalent or greater</li>
+                    <li><b>Memory:</b> 8 GB RAM</li>
+                    <li><b>Graphics:</b> NVIDIA GeForce GTX 970 / AMD Radeon R9 290 equivalent or greater</li>
+                    <li><b>DirectX:</b> Version 11</li>
+                    <li><b>Bluetooth:</b> Bluetooth 4.0 for accessories</li>
+                </ul>
+                <p> We have found that laptops with 8GB of RAM and a dedicated video card (GTX 9xxM series +) can get
+                    by
+                    running ASL with the Windows Mixed Reality Devices.</p>
+                <p><b>Note:</b> Natively the Windows Mixed Reality uses the Universal Windows Platform API, but
+                    ASL does not currently support building toward that platform, so to use the Windows Mixed Reality
+                    devices you need to install the following from Steam.</p>
+                <a href="https://store.steampowered.com/app/719950/Windows_Mixed_Reality_for_SteamVR/">Windows Mixed
+                    Reality for SteamVR</a>
+                <p></p>
+
+                <h2>VR Setup</h2>
+                <p>For Vive setup follow <a href="https://support.steampowered.com/kb_article.php?ref=2001-UXCM-4439">these
+                        instructions</a></p>
+                <p>For Windows Mixed Reality initially follow <a href="https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/before-you-start">these
+                        instructions</a>
+                    <br>Then procede to install SteamVR and Windows Mixed Reality for SteamVR.</p>
+
+                <h1>ASL Usage</h1>
+                <h2>Virtual Reality Toolkit</h2>
+                <p>ASL's support of VR devices is built on top of the <a href="https://vrtk.io/">Virtual Reality
+                        Toolkit</a>.
+                    The VRTK modules are sourced from the github repository, the version on the Unity store is outdated
+                    and
+                    will not work with ASL.</p>
+                <p>VRTK is an open source framework designed to ease VR development and allow for easing support of
+                    multiple devices. The following are some resources for using VRTK</p>
+                <ul>
+                    <li><a href="https://vrtk-slack-invite.herokuapp.com/">Slack server for VRTK development</a></li>
+                    <li><a href="https://vrtoolkit.readme.io/docs/getting-started">VRTK documentation</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=tMz04CqAYjw&amp;list=PLTiD-q2AfVNJYGRdR9veojuO0t4v4idmI">Video
+                            tutorials</a></li>
+                    <li><a href="https://github.com/quintesse/PlayoVR">Repository using PUN with VRTK</a></li>
+                </ul>
+                <h2>Adding a VR player</h2>
+                <p>Adding a VR player to a scene in ASL is rather trivial. Once a supported VR device is setup and
+                    installed all that is required is for the
+                    VR Player System prefab to be included in a scene, the VR device connected to the computer, and to
+                    have
+                    the appropriate version of SteamVR running.</p>
+                <img width="300" src="./Summer 2018 ASL Documentation - Virtual Reality Tutorial_files/VRPrefab.png">
+                <p>From the prefab you then select the supported device you would like to load and then press play.
+                    This
+                    will lead to the creation of a networked
+                    avatar that will provide a visual representation of the VR player that is synchronized across ASL.</p>
+                <img width="300" src="./Summer 2018 ASL Documentation - Virtual Reality Tutorial_files/networkedVRavatar.png">
+                <h3>VR Player Types</h3>
+                <p>Currently ASL supports a simulator VR player and a SteamVR player. In order to add support for a
+                    device
+                    the camera rig prefabs of an SDK setup is modified
+                    to have reference points for the components of a networked VR avatar. The <a href="http://students.washington.edu/aluc4rd/ASL/api/ASL.VirtualReality/VRInitilizationScript/">VR
+                        Initilization Script</a> will first create an instance of a networked avatar.
+                    Upon creation the avatar the apppropriate VR scripts, based off of the selected device field, will
+                    be
+                    activated. After activiation GameObject references for the avatar will be found by the
+                    initilization
+                    script, which will call the <a href="http://students.washington.edu/aluc4rd/ASL/api/ASL.VirtualReality/VRAvatarInitialization/304A0EE7.html">VRAvatarInitialization
+                        initilize function.</a></p>
+                <p>This process has already been implemented for SteamVR devices and the simulator.</p>
+                <h2>Controlling a VR player</h2>
+                <p>Interactions with VR input devices that control a VR player are located in the 'VRTK_Scripts'
+                    GameObject. These scripts are implemented to support
+                    any VR device supported by VRTK, given the appropriate SDK is included in the project (see SteamVR
+                    and
+                    OVR in 3rd Party Libraries). See <a href="https://www.youtube.com/watch?v=2IWAwFDhX2M&amp;list=PLTiD-q2AfVNK3g1fgaZ3Zgxjdl6rs6eP7">this
+                        playlist</a> for an example of setting up these scripts.
+                    Scenes in 'ASL/3rd Party Libraries/VRTK/Examples', specifically [004 - Locomotion] Teleporting
+                    &amp;
+                    [006 - Locomotion] MovementTypes should also be useful references for changing the way a VR player
+                    is
+                    controlled.</p>
+                <h3>Simulator</h3>
+                <p>The simulator emulates movement of the headset via the VRTK input simulator script. When a simulator
+                    is
+                    created there will be a GUI element displaying controls.</p>
+                <img width="300" src="./Summer 2018 ASL Documentation - Virtual Reality Tutorial_files/SimulatorControls.png">
+                <p> The current built in controls use WSAD for moving the playerspace/camera rig. The mouse moves the
+                    direction the headset is oriented. You can follow the GUI to emulate buttons
+                    press with keypresses to trigger teleportation.</p>
+                <h3>SteamVR</h3>
+                <p>When using an actual VR device you will interact with an additional movement option. The simulator
+                    can
+                    only move the orientation
+                    of the headset. When using VR the camera will move in relation to your actual headset movement and
+                    will
+                    move with you relative to the playspace
+                    and camerarig. However, when using SteamVR, you lose support for WSAD movement &amp; the existing
+                    method of moving in the virtual scene outside of the
+                    length of your VR playspace is to use the trigger buttons to teleport around.</p>
+                <h3>Other devices</h3>
+                <p>Other devices have yet to be implemented, but should control just like the SteamVR devices.</p>
+                </section>
             </div>
         </div>
-        <div id="page-footer" class="footer-wrap clear"></div>
     </div>
 </body>
+
 </html>
