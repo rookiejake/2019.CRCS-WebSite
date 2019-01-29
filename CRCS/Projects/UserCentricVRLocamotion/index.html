@@ -71,14 +71,13 @@
                     </p>
 
                     <!--    Justin's capstone videos showcased  -->
-                    <iframe id="video_showcase" src="https://drive.google.com/uc?id=1aP9RKX4-Dt7w6n5LpDRHE-y5BvYn7uo4"
+                    <iframe id="video-showcase" src="https://drive.google.com/file/d/1aP9RKX4-Dt7w6n5LpDRHE-y5BvYn7uo4/preview"
                         width="1280" height="720"></iframe>
+                    <p id="video-text" style="text-align: center; font-size: 24px;"> <i>Final Demo</i> </p>
 
                     <div class="row" style="text-align: center;" id="playlist_controls">
                         <div style="margin-bottom: 10px" class="col-md-12">
                             <button id="previous" onclick="changeVideo('left')">Previous</button>
-                        </div>
-                        <div class="col-md-12">
                             <button id="next" onclick="changeVideo('right')">Next</button>
                         </div>
                     </div>
@@ -91,27 +90,41 @@
     </div>
 </body>
 <script>
-    var videoList = JSON.parse("videosList.json")
+    //Fetching videos information
+    var request = new XMLHttpRequest();
+    request.open("GET", "videosList.json", false);
+    request.send(null)
+    var videoList = JSON.parse(request.responseText);
+
     var videoIndex = 0;
 
     function changeVideo(direction) {
+        console.log(videoIndex);
+
         //Reached beginning of playlist
-        if (direction === left && video_index === 0) {
+        if (direction === 'left' && videoIndex === 0) {
             videoIndex = videoList.length - 1;
-            document.querySelector("#video_showcase > source").src = videoList[videoIndex];
+            document.getElementById("video-showcase").src = videoList[videoIndex].link;
+            document.getElementById("video-text").innerHTML = videoList[videoIndex].title.italics();
+
             return;
         }
 
         //Reached end of playlist
-        if (direction === right && videoList[videoIndex + 1] === null) {
+        if (direction === 'right' && videoIndex === videoList.length - 1) {
             videoIndex = 0;
-            document.querySelector("#video_showcase > source").src = videoList[videoIndex];
+            document.getElementById("video-showcase").src = videoList[videoIndex].link;
+            document.getElementById("video-text").innerHTML = videoList[videoIndex].title.italics();
+
             return;
         }
 
         //Standard controls
-        if (direction === left) document.querySelector("#video_showcase > source").src = videoList[--videoIndex];
-        if (direction === right) document.querySelector("#video_showcase > source").src = videoList[++videoIndex];
+        if (direction === 'left') document.getElementById("video-showcase").src = videoList[--videoIndex].link;
+        if (direction === 'right') document.getElementById("video-showcase").src = videoList[++videoIndex].link;
+
+        document.getElementById("video-text").innerHTML = videoList[videoIndex].title.italics();
+
 
     }
 </script>
