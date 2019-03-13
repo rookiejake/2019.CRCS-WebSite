@@ -5,8 +5,9 @@
 
 {
     "workbench.colorCustomizations": {
-        "statusBar.background": "#4B2E83",
-        "titleBar.border": "#c26e00c4",
+        "titleBar.border": "#005266",
+        "titleBar.activeBackground": "#422a68",
+        "titleBar.inactiveBackground": "#1b1b1b"
     },
     "html.format.enable": true,
 }
