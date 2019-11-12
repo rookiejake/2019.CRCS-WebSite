@@ -1,6 +1,7 @@
-<!-- Link to get wordpress styling for the website-->
-<link rel='stylesheet' id='all-css-0-1' href='https://s2.wp.com/_static/??-eJyFUdFOwzAM/CGyqIA28YD4liT1Vq9xEsUJpX+P244iGAovle9y5zu5ekrKxVAgFE1VJV8vGFhPyUVSTOhh/oUOjvlB/23jatllTAWjoHP0Pk4t/RDfIStbrfUg7jJ72OUYnK+90ELo3vCAsoAPhOFecmVd5H208WMfWrkex8UFJRk3qhW15KaXVGVNvl1ix5sJdYhlbbcPrW0uZhCekimLgqBHAx5IZC0bpeOXaxkHad6M2apamzIwK/kSVlJlkKB/6tFSZbvKevwfzJ1126hTtfpiCkxm/v6Rb/TaPb88dqfT07G7fgKSbekB'
-    type='text/css' media='all' />
+<!-- Link to get Bootstrap and Custom Stylehsheet for the website-->
+<link rel='stylesheet' id='all-css-0-1' href='/modules/css/custom-styling.css' type='text/css' media='all' />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 <!--Add some styling to the top bar-->
 <style type="text/css">
@@ -42,14 +43,14 @@
     }
 </style>
 
-<!-- Adds in the top bar -->
-<div id="top-bar" class="header-bg site-branding">
-    <h1 style="color:black">Cross Reality Collaboration Sandbox</h1>
-    <h3 style="color:black">Research Group</h3>
-</div>
 
 <!-- Adds the nav bar -->
 <header id="masthead" class="site-header" role="banner">
+    <!-- Adds in the top bar -->
+    <div id="top-bar" class="header-bg site-branding">
+        <h1 style="color:black">Cross Reality Collaboration Sandbox</h1>
+        <h3 style="color:black">Research Group</h3>
+    </div>
     <div id="navbar" class="stick">
         <nav class="main-navigation">
             <ul>
@@ -63,3 +64,42 @@
         </nav>
     </div>
 </header>
+
+<header id="masthead-mobile" class="site-header mobile" role="banner">
+    <div id="top-bar" class="header-bg site-branding">
+        <h1 style="color:black">CRCS</h1>
+        <div class="burger container" onclick="menuVisibility()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </div>
+    <div id="navbar" class="stick">
+        <nav class="main-navigation" id='navlist'>
+            <ul>
+                <button type="button" class="btn btn-info">
+                    <a href="/2019.CRCS-WebSite/">Home</a></button>
+                <button type="button" class="btn btn-info">
+                    <a href="/2019.CRCS-WebSite/Projects">Projects</a></button>
+                <button type="button" class="btn btn-info">
+                    <a href="/2019.CRCS-WebSite/ImagineCup">ImagineCup</a></button>
+                <button type="button" class="btn btn-info">
+                    <a href="/2019.CRCS-WebSite/Publications">Publications</a></button>
+                <button type="button" class="btn btn-info">
+                    <a href="/2019.CRCS-WebSite/Documentation">Documentation</a></button>
+                <button type="button" class="btn btn-info">
+                    <a href="/2019.CRCS-WebSite/Dissemination">Dissemination</a></button>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<script>
+    function menuVisibility() {
+        let visibility = document.getElementById('navlist').style.display == 'unset' ?
+            'disable' :
+            'enable'
+
+        document.getElementById('navlist').style.display = visibility == 'enable' ? 'unset' : 'none'
+    }
+</script>
